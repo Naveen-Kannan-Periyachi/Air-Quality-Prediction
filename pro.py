@@ -9,14 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.title("Air Quality Prediction - Model Evaluation")
-try:
-    default_dataset_path = "E:/Air-Quality-Prediction/Data/Real-Data/Real_Combine.csv"  # Replace with your dataset's path
-    df = pd.read_csv(default_dataset_path)
-    st.success(f"Using default dataset: {default_dataset_path}")
-except FileNotFoundError:
-    df = None
-    st.warning("Default dataset not found. Please upload your own CSV file.")
 
 uploaded_file = st.file_uploader("E:/Air-Quality-Prediction/Data/Real-Data/Real_Combine.csv", type=["csv"])
 
